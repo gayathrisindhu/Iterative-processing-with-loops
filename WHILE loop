@@ -1,1 +1,13 @@
-
+SET SERVEROUTPUT ON
+DECLARE  
+  a NUMBER := 0;  
+BEGIN  
+  WHILE a < 10
+  LOOP 
+    a := a +1;
+    IF a = 5 THEN
+      CONTINUE;
+    END IF;
+    dbms_output.put_line(a); 
+  END LOOP;  
+END;
